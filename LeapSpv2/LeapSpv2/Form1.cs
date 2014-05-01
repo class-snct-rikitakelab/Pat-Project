@@ -37,5 +37,12 @@ namespace LeapSpv2
 
         }
 
+        private void btnConnect_Click(object sender, EventArgs e)
+        {
+            int index = BTconnection.SelectedIndex;
+            sp = Spconnector.Connect(index);
+        }
+
+
     }
 }
