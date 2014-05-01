@@ -13,17 +13,28 @@ namespace LeapSpv2
 {
     public partial class Form1 : Form
     {
-        SpheroConnector Spconnector = new SpheroConnector();
-        Sphero sp = null;
+        public SpheroConnector Spconnector = new SpheroConnector();
+        public Sphero sp = null;
+        public static string lstatusdis;
+        public static string lstatuscon;
         public Form1()
         {
             InitializeComponent();
-        }
 
+
+        }
+        public void updateLStatus()
+        {
+
+        }
         private void btnSearch_Click(object sender, EventArgs e)
         {
             Spconnector.Scan();
             BTconnection.DataSource = Spconnector.DeviceNames;
+        }
+        public static void whenLConnect()
+        {
+
         }
 
     }
