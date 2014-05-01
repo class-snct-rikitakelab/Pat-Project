@@ -11,3 +11,6 @@ D:\Tasks\SNCT-Project\LeapSpv2\LeapSpv2\obj\Debug\LeapSpv2.pdb
 D:\Tasks\SNCT-Project\LeapSpv2\LeapSpv2\obj\Debug\LeapSpv2.Form1.resources
 D:\Tasks\SNCT-Project\LeapSpv2\LeapSpv2\bin\Debug\SpheroNET.dll
 D:\Tasks\SNCT-Project\LeapSpv2\LeapSpv2\bin\Debug\SpheroNET.pdb
+D:\Tasks\SNCT-Project\LeapSpheroG\LeapSpv2\LeapSpv2\bin\Debug\LeapSpv2.exe.config
+D:\Tasks\SNCT-Project\LeapSpheroG\LeapSpv2\LeapSpv2\obj\Debug\LeapSpv2.exe
+D:\Tasks\SNCT-Project\LeapSpheroG\LeapSpv2\LeapSpv2\obj\Debug\LeapSpv2.pdb
