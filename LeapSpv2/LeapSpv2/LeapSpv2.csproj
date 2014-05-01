@@ -38,6 +38,10 @@
     <Reference Include="LeapCSharp.NET4.0">
       <HintPath>..\..\..\..\..\Additional Program\LeapDeveloperKit\LeapSDK\lib\LeapCSharp.NET4.0.dll</HintPath>
     </Reference>
+    <Reference Include="SpheroNET, Version=0.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\SpheroNET\bin\Debug\SpheroNET.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -84,12 +88,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\SpheroNET\SpheroNET.csproj">
-      <Project>{62ba9126-acbc-4caf-aa51-65e45f2f2561}</Project>
-      <Name>SpheroNET</Name>
-    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <Content Include="Leap.dll" />

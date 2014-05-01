@@ -34,8 +34,8 @@
             this.ldisconn = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.lconn = new System.Windows.Forms.TextBox();
             this.btnConnect = new System.Windows.Forms.Button();
+            this.lconn = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // label1
@@ -70,8 +70,10 @@
             // 
             // ldisconn
             // 
+            this.ldisconn.BackColor = System.Drawing.Color.White;
             this.ldisconn.Location = new System.Drawing.Point(152, 64);
             this.ldisconn.Name = "ldisconn";
+            this.ldisconn.ReadOnly = true;
             this.ldisconn.Size = new System.Drawing.Size(100, 20);
             this.ldisconn.TabIndex = 3;
             this.ldisconn.Text = "Disconnected";
@@ -95,15 +97,6 @@
             this.label3.TabIndex = 5;
             this.label3.Text = "Sphero status";
             // 
-            // lconn
-            // 
-            this.lconn.Location = new System.Drawing.Point(31, 64);
-            this.lconn.Name = "lconn";
-            this.lconn.Size = new System.Drawing.Size(100, 20);
-            this.lconn.TabIndex = 6;
-            this.lconn.Text = "Connected";
-            this.lconn.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
             // btnConnect
             // 
             this.btnConnect.Location = new System.Drawing.Point(167, 157);
@@ -113,6 +106,17 @@
             this.btnConnect.Text = "Connect";
             this.btnConnect.UseVisualStyleBackColor = true;
             this.btnConnect.Click += new System.EventHandler(this.btnConnect_Click);
+            // 
+            // lconn
+            // 
+            this.lconn.BackColor = System.Drawing.Color.White;
+            this.lconn.Location = new System.Drawing.Point(31, 64);
+            this.lconn.Name = "lconn";
+            this.lconn.ReadOnly = true;
+            this.lconn.Size = new System.Drawing.Size(100, 20);
+            this.lconn.TabIndex = 6;
+            this.lconn.Text = "Connected";
+            this.lconn.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // Form1
             // 
@@ -142,8 +146,8 @@
         private System.Windows.Forms.TextBox ldisconn;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox lconn;
         private System.Windows.Forms.Button btnConnect;
+        private System.Windows.Forms.TextBox lconn;
 
     }
 }

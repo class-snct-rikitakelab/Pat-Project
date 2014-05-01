@@ -15,11 +15,11 @@ namespace LeapSpv2
         const int FramePause = 50000;
         public override void OnConnect(Controller arg0)
         {
-            Form1.lstatuscon
+          //  Form1.lstatuscon
         }
         public override void OnDisconnect(Controller arg0)
         {
-            Form1.lstatusdis
+           // Form1.lstatusdis
         }
         public override void OnFrame(Controller ctrl)
         {
@@ -47,6 +47,7 @@ namespace LeapSpv2
                                     if (swipeGesture.Direction.x > 0)
                                     {
                                         //right
+                                        //f.sp.SendPacket(new SpheroCommandPacket (0x02, 0x30, 0x01, new byte[] { (byte)10, (byte)((90 & 0xFF00) >> 8), (byte)(90 & 0x00FF), (byte)1 }));
                                         f.sp.Roll(10, 90, 1);
                                     }
                                     else
@@ -85,6 +86,7 @@ namespace LeapSpv2
                             if (gesture.Type == Gesture.GestureType.TYPECIRCLE)
                             {
                                 //change color
+                                f.sp.SetRGBLEDOutput(255, 0, 0);
                             }
                         }
                     }
