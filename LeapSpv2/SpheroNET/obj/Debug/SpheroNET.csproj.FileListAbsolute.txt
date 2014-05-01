@@ -1,0 +1,6 @@
+D:\Tasks\SNCT-Project\spheronet-0-1-1\SpheroNET\bin\Debug\SpheroNET.dll
+D:\Tasks\SNCT-Project\spheronet-0-1-1\SpheroNET\bin\Debug\SpheroNET.pdb
+D:\Tasks\SNCT-Project\spheronet-0-1-1\SpheroNET\bin\Debug\InTheHand.Net.Personal.dll
+D:\Tasks\SNCT-Project\spheronet-0-1-1\SpheroNET\obj\Debug\SpheroNET.csprojResolveAssemblyReference.cache
+D:\Tasks\SNCT-Project\spheronet-0-1-1\SpheroNET\obj\Debug\SpheroNET.dll
+D:\Tasks\SNCT-Project\spheronet-0-1-1\SpheroNET\obj\Debug\SpheroNET.pdb
