@@ -8,18 +8,24 @@ using Leap;
 
 namespace LeapSpv2
 {
-    class LeapListener : Listener
+    public class LeapListener : Listener
     {
-        Form1 f = new Form1();
         private long currentTime, previousTime, timeChange;
         const int FramePause = 50000;
+        private Form1 f;
+        public void SetF(Form1 ff)
+        {
+            f = ff;
+        }
         public override void OnConnect(Controller arg0)
         {
           //  Form1.lstatuscon
+            f.whenLConnect();
         }
         public override void OnDisconnect(Controller arg0)
         {
            // Form1.lstatusdis
+            f.whenLDisconnect();
         }
         public override void OnFrame(Controller ctrl)
         {

@@ -1,8 +1,10 @@
 ﻿using System;
+using Leap;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+
 
 namespace LeapSpv2
 {
@@ -14,10 +16,10 @@ namespace LeapSpv2
         [STAThread]
         static void Main()
         {
-
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Form1 f = new Form1();
+            Application.Run(f);
         }
     }
 }

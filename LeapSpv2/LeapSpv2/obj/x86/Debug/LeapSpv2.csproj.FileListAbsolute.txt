@@ -1,0 +1,14 @@
+D:\Tasks\SNCT-Project\LeapSpheroG\LeapSpv2\LeapSpv2\bin\x86\Debug\LeapSpv2.exe.config
+D:\Tasks\SNCT-Project\LeapSpheroG\LeapSpv2\LeapSpv2\bin\x86\Debug\LeapSpv2.exe
+D:\Tasks\SNCT-Project\LeapSpheroG\LeapSpv2\LeapSpv2\bin\x86\Debug\LeapSpv2.pdb
+D:\Tasks\SNCT-Project\LeapSpheroG\LeapSpv2\LeapSpv2\bin\x86\Debug\InTheHand.Net.Personal.dll
+D:\Tasks\SNCT-Project\LeapSpheroG\LeapSpv2\LeapSpv2\bin\x86\Debug\LeapCSharp.NET4.0.dll
+D:\Tasks\SNCT-Project\LeapSpheroG\LeapSpv2\LeapSpv2\bin\x86\Debug\SpheroNET.dll
+D:\Tasks\SNCT-Project\LeapSpheroG\LeapSpv2\LeapSpv2\bin\x86\Debug\InTheHand.Net.Personal.xml
+D:\Tasks\SNCT-Project\LeapSpheroG\LeapSpv2\LeapSpv2\bin\x86\Debug\SpheroNET.pdb
+D:\Tasks\SNCT-Project\LeapSpheroG\LeapSpv2\LeapSpv2\obj\x86\Debug\LeapSpv2.csprojResolveAssemblyReference.cache
+D:\Tasks\SNCT-Project\LeapSpheroG\LeapSpv2\LeapSpv2\obj\x86\Debug\LeapSpv2.Form1.resources
+D:\Tasks\SNCT-Project\LeapSpheroG\LeapSpv2\LeapSpv2\obj\x86\Debug\LeapSpv2.Properties.Resources.resources
+D:\Tasks\SNCT-Project\LeapSpheroG\LeapSpv2\LeapSpv2\obj\x86\Debug\LeapSpv2.csproj.GenerateResource.Cache
+D:\Tasks\SNCT-Project\LeapSpheroG\LeapSpv2\LeapSpv2\obj\x86\Debug\LeapSpv2.exe
+D:\Tasks\SNCT-Project\LeapSpheroG\LeapSpv2\LeapSpv2\obj\x86\Debug\LeapSpv2.pdb

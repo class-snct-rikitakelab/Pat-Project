@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using SpheroNET;
+using Leap;
 
 namespace LeapSpv2
 {
@@ -15,32 +16,49 @@ namespace LeapSpv2
     {
         public SpheroConnector Spconnector = new SpheroConnector();
         public Sphero sp = null;
-        public static string lstatusdis;
-        public static string lstatuscon;
+        public LeapListener lListener;
+        public Controller lctrl;
+        public static bool lstatuscon = false;
         public Form1()
         {
             InitializeComponent();
-
-
+            lconn.BackColor = Color.White;
+            ldisconn.BackColor = Color.White;
         }
-        public void updateLStatus()
-        {
-
-        }
+        
         private void btnSearch_Click(object sender, EventArgs e)
         {
             Spconnector.Scan();
             BTconnection.DataSource = Spconnector.DeviceNames;
         }
-        public static void whenLConnect()
+        public void whenLConnect()
         {
+            lconn.BackColor = Color.LawnGreen;
+            ldisconn.BackColor = Color.White;
+            lconn.Update();
+            ldisconn.Update();
+        }
 
+        public void whenLDisconnect()
+        {
+            ldisconn.BackColor = Color.Red;
+            lconn.BackColor = Color.White;
+            lconn.Update();
+            ldisconn.Update();
         }
 
         private void btnConnect_Click(object sender, EventArgs e)
         {
             int index = BTconnection.SelectedIndex;
             sp = Spconnector.Connect(index);
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            lctrl = new Controller();
+            lListener = new LeapListener();
+            lctrl.AddListener(lListener);
+            lListener.SetF(this);
         }
 
 

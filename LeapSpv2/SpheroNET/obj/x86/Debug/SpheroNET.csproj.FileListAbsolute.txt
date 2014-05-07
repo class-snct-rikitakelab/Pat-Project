@@ -1,0 +1,6 @@
+D:\Tasks\SNCT-Project\LeapSpheroG\LeapSpv2\SpheroNET\bin\x86\Debug\SpheroNET.dll
+D:\Tasks\SNCT-Project\LeapSpheroG\LeapSpv2\SpheroNET\bin\x86\Debug\SpheroNET.pdb
+D:\Tasks\SNCT-Project\LeapSpheroG\LeapSpv2\SpheroNET\bin\x86\Debug\InTheHand.Net.Personal.dll
+D:\Tasks\SNCT-Project\LeapSpheroG\LeapSpv2\SpheroNET\bin\x86\Debug\InTheHand.Net.Personal.xml
+D:\Tasks\SNCT-Project\LeapSpheroG\LeapSpv2\SpheroNET\obj\x86\Debug\SpheroNET.dll
+D:\Tasks\SNCT-Project\LeapSpheroG\LeapSpv2\SpheroNET\obj\x86\Debug\SpheroNET.pdb

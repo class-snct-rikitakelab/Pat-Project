@@ -10,5 +10,4 @@ D:\Tasks\SNCT-Project\LeapSpheroG\LeapSpv2\SpheroNET\bin\Debug\InTheHand.Net.Per
 D:\Tasks\SNCT-Project\LeapSpheroG\LeapSpv2\SpheroNET\bin\Debug\InTheHand.Net.Personal.xml
 D:\Tasks\SNCT-Project\LeapSpheroG\LeapSpv2\SpheroNET\obj\Debug\SpheroNET.dll
 D:\Tasks\SNCT-Project\LeapSpheroG\LeapSpv2\SpheroNET\obj\Debug\SpheroNET.pdb
-D:\Tasks\SNCT-Project\LeapSpheroG\LeapSpv2\SpheroNET\bin\Debug\SpheroNET.dll.CodeAnalysisLog.xml
-D:\Tasks\SNCT-Project\LeapSpheroG\LeapSpv2\SpheroNET\bin\Debug\SpheroNET.dll.lastcodeanalysissucceeded
+D:\Tasks\SNCT-Project\LeapSpheroG\LeapSpv2\SpheroNET\obj\Debug\SpheroNET.csprojResolveAssemblyReference.cache
