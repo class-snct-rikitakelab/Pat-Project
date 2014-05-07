@@ -25,3 +25,4 @@ D:\Tasks\SNCT-Project\LeapSpheroG\LeapSpv2\LeapSpv2\bin\Debug\LeapCSharp.NET4.0.
 D:\Tasks\SNCT-Project\LeapSpheroG\LeapSpv2\LeapSpv2\bin\Debug\SpheroNET.pdb
 D:\Tasks\SNCT-Project\LeapSpheroG\LeapSpv2\LeapSpv2\bin\Debug\InTheHand.Net.Personal.xml
 D:\Tasks\SNCT-Project\LeapSpheroG\LeapSpv2\LeapSpv2\bin\Debug\SpheroNET.dll
+D:\Tasks\SNCT-Project\LeapSpheroG\LeapSpv2\LeapSpv2\obj\Debug\LeapSpv2.Form2.resources
