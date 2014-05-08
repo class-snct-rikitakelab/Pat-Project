@@ -18,7 +18,7 @@ namespace LeapSpv2
         public Sphero sp = null;
         public LeapListener lListener;
         public Controller lctrl;
-        public static bool lstatuscon = false;
+        public bool lstatuscon = false;
         public Form1()
         {
             InitializeComponent();
@@ -31,6 +31,7 @@ namespace LeapSpv2
             Spconnector.Scan();
             BTconnection.DataSource = Spconnector.DeviceNames;
         }
+
         public void whenLConnect()
         {
             lconn.BackColor = Color.LawnGreen;
@@ -51,12 +52,21 @@ namespace LeapSpv2
         {
             int index = BTconnection.SelectedIndex;
             sp = Spconnector.Connect(index);
+            if (lstatuscon)
+            {
+                Form2 f2 = new Form2();
+                this.Hide();
+                f2.ShowDialog();
+                this.Close();
+            }
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
             lctrl = new Controller();
             lListener = new LeapListener();
+            lctrl.EnableGesture(Gesture.GestureType.TYPECIRCLE);
+            lctrl.EnableGesture(Gesture.GestureType.TYPESWIPE);
             lctrl.AddListener(lListener);
             lListener.SetF(this);
         }

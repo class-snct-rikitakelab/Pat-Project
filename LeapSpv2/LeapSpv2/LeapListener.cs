@@ -13,19 +13,26 @@ namespace LeapSpv2
         private long currentTime, previousTime, timeChange;
         const int FramePause = 50000;
         private Form1 f;
+        private Form2 f2;
         public void SetF(Form1 ff)
         {
             f = ff;
+        }
+        public void SetF2(Form2 ff)
+        {
+            f2 = ff;
         }
         public override void OnConnect(Controller arg0)
         {
           //  Form1.lstatuscon
             f.whenLConnect();
+            f.lstatuscon = true;
         }
         public override void OnDisconnect(Controller arg0)
         {
            // Form1.lstatusdis
             f.whenLDisconnect();
+            f.lstatuscon = false;
         }
         public override void OnFrame(Controller ctrl)
         {
@@ -95,6 +102,22 @@ namespace LeapSpv2
                                 f.sp.SetRGBLEDOutput(255, 0, 0);
                             }
                         }
+                    }
+                    previousTime = currentTime;
+                }
+                else if (Rhand.Fingers.Count < 1)
+                {
+                    if (timeChange > FramePause)
+                    {
+                        /*GestureList gestures = frame.Gestures();
+                        for (i = 0; i < gestures.Count; i++)
+                        {
+                            Gesture gesture = gestures[0];
+                            if (gesture.Type == Gesture.GestureType.TYPECIRCLE)
+                            {
+                                //Stop
+                            }
+                        }*/
                     }
                     previousTime = currentTime;
                 }

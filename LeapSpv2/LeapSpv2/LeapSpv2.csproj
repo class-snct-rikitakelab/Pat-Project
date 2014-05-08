@@ -103,6 +103,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -125,6 +126,14 @@
     <Content Include="msvcp100d.dll" />
     <Content Include="msvcr100.dll" />
     <Content Include="msvcr100d.dll" />
+    <None Include="Resources\backwardBtn.jpg" />
+    <None Include="Resources\bBtnP.jpg" />
+    <None Include="Resources\fBtnP.jpg" />
+    <None Include="Resources\forwardBtn.jpg" />
+    <None Include="Resources\lBtnP.jpg" />
+    <None Include="Resources\leftBtn.jpg" />
+    <None Include="Resources\rBtnP.jpg" />
+    <None Include="Resources\rightBtn.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

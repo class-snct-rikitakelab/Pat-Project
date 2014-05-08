@@ -19,7 +19,7 @@ namespace LeapSpv2
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Form1 f = new Form1();
-            Form2 f = new Form2();
+           
             Application.Run(f);
         }
     }
