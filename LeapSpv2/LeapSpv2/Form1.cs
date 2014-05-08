@@ -56,6 +56,7 @@ namespace LeapSpv2
             {
                 Form2 f2 = new Form2();
                 this.Hide();
+                lListener.SetF2(f2);
                 f2.ShowDialog();
                 this.Close();
             }
