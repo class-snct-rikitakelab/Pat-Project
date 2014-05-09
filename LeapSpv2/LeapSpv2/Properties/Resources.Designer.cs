@@ -83,6 +83,16 @@ namespace LeapSpv2.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap blueBtn {
+            get {
+                object obj = ResourceManager.GetObject("blueBtn", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap fBtnP {
             get {
                 object obj = ResourceManager.GetObject("fBtnP", resourceCulture);
@@ -126,6 +136,16 @@ namespace LeapSpv2.Properties {
         internal static System.Drawing.Bitmap rBtnP {
             get {
                 object obj = ResourceManager.GetObject("rBtnP", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap redBtn {
+            get {
+                object obj = ResourceManager.GetObject("redBtn", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

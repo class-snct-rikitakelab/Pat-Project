@@ -34,10 +34,12 @@
             this.leftB = new System.Windows.Forms.PictureBox();
             this.rightB = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.colorB = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.forwardB)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.backwardB)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.leftB)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.rightB)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.colorB)).BeginInit();
             this.SuspendLayout();
             // 
             // forwardB
@@ -46,7 +48,7 @@
             this.forwardB.InitialImage = null;
             this.forwardB.Location = new System.Drawing.Point(196, 97);
             this.forwardB.Name = "forwardB";
-            this.forwardB.Size = new System.Drawing.Size(80, 82);
+            this.forwardB.Size = new System.Drawing.Size(80, 89);
             this.forwardB.TabIndex = 0;
             this.forwardB.TabStop = false;
             // 
@@ -87,11 +89,21 @@
             this.label1.TabIndex = 4;
             this.label1.Text = "Controller";
             // 
+            // colorB
+            // 
+            this.colorB.Image = ((System.Drawing.Image)(resources.GetObject("colorB.Image")));
+            this.colorB.Location = new System.Drawing.Point(196, 196);
+            this.colorB.Name = "colorB";
+            this.colorB.Size = new System.Drawing.Size(80, 79);
+            this.colorB.TabIndex = 5;
+            this.colorB.TabStop = false;
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(484, 461);
+            this.Controls.Add(this.colorB);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.rightB);
             this.Controls.Add(this.leftB);
@@ -104,6 +116,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.backwardB)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.leftB)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.rightB)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.colorB)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -116,5 +129,6 @@
         private System.Windows.Forms.PictureBox leftB;
         private System.Windows.Forms.PictureBox rightB;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.PictureBox colorB;
     }
 }

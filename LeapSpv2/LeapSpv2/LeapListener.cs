@@ -63,16 +63,16 @@ namespace LeapSpv2
                                         //right
                                         //f.sp.SendPacket(new SpheroCommandPacket (0x02, 0x30, 0x01, new byte[] { (byte)10, (byte)((90 & 0xFF00) >> 8), (byte)(90 & 0x00FF), (byte)1 }));
                                         f.sp.Roll(100, 90, 1);
-                                        Thread.Sleep(3000);
-                                        f.sp.Roll(0, 0, 1);
+                                        Thread.Sleep(2000);
+                                        f.sp.Roll(0, 90, 1);
                                         f2.whenSPright();
                                     }
                                     else
                                     {
                                         //left
                                         f.sp.Roll(100, 270, 1);
-                                        Thread.Sleep(3000);
-                                        f.sp.Roll(0, 0, 1);                                        
+                                        Thread.Sleep(2000);
+                                        f.sp.Roll(0, 270, 1);                                        
                                         f2.whenSPleft();
                                     }
                                 }
@@ -82,7 +82,7 @@ namespace LeapSpv2
                                     {
                                         //forward
                                         f.sp.Roll(100, 0, 1);
-                                        Thread.Sleep(3000);
+                                        Thread.Sleep(2000);
                                         f.sp.Roll(0, 0, 1);                                       
                                         f2.whenSPforward();
                                     }
@@ -90,8 +90,8 @@ namespace LeapSpv2
                                     {
                                         //backward
                                         f.sp.Roll(100, 180, 1);
-                                        Thread.Sleep(3000);
-                                        f.sp.Roll(0, 0, 1); 
+                                        Thread.Sleep(2000);
+                                        f.sp.Roll(0, 180, 1); 
                                         f2.whenSPbackward();
                                     }
                                 }
@@ -113,6 +113,7 @@ namespace LeapSpv2
                             {
                                 //change color
                                 f.sp.SetRGBLEDOutput(255, 0, 0);
+                                f2.whenSPred();
                             }
                         }
                     }

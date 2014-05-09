@@ -21,6 +21,7 @@ namespace LeapSpv2
             forwardB.Image = LeapSpv2.Properties.Resources.forwardBtn;
             backwardB.Image = LeapSpv2.Properties.Resources.backwardBtn;
         }
+
         public void whenSPleft()
         {
             leftB.Image = LeapSpv2.Properties.Resources.lBtnP;
@@ -28,6 +29,7 @@ namespace LeapSpv2
             forwardB.Image = LeapSpv2.Properties.Resources.forwardBtn;
             backwardB.Image = LeapSpv2.Properties.Resources.backwardBtn;
         }
+
         public void whenSPforward()
         {
             forwardB.Image = LeapSpv2.Properties.Resources.fBtnP;
@@ -35,6 +37,7 @@ namespace LeapSpv2
             leftB.Image = LeapSpv2.Properties.Resources.leftBtn;
             backwardB.Image = LeapSpv2.Properties.Resources.backwardBtn;
         }
+
         public void whenSPbackward()
         {
             backwardB.Image = LeapSpv2.Properties.Resources.bBtnP;
@@ -42,6 +45,12 @@ namespace LeapSpv2
             leftB.Image = LeapSpv2.Properties.Resources.leftBtn;
             forwardB.Image = LeapSpv2.Properties.Resources.forwardBtn;
         }
+
+        public void whenSPred()
+        {
+            colorB.Image = LeapSpv2.Properties.Resources.redBtn;
+        }
+
         public Form2()
         {
             InitializeComponent();
