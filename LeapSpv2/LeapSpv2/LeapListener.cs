@@ -112,7 +112,12 @@ namespace LeapSpv2
                             if (gesture.Type == Gesture.GestureType.TYPECIRCLE)
                             {
                                 //change color
-                                f.sp.SetRGBLEDOutput(255, 0, 0);
+                                int rNum,gNum,bNum;
+                                Random r = new Random();
+                                rNum = r.Next(0, 255);
+                                gNum = r.Next(0, 255);
+                                bNum = r.Next(0, 255);
+                                f.sp.SetRGBLEDOutput((byte)rNum, (byte)gNum, (byte)bNum);
                                 f2.whenSPred();
                             }
                             /*else if (gesture.Type == Gesture.GestureType.TYPESCREENTAP)
