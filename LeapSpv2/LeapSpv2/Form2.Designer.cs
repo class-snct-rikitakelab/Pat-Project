@@ -35,6 +35,7 @@
             this.rightB = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.colorB = new System.Windows.Forms.PictureBox();
+            this.breakB = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.forwardB)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.backwardB)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.leftB)).BeginInit();
@@ -46,7 +47,7 @@
             // 
             this.forwardB.Image = ((System.Drawing.Image)(resources.GetObject("forwardB.Image")));
             this.forwardB.InitialImage = null;
-            this.forwardB.Location = new System.Drawing.Point(196, 97);
+            this.forwardB.Location = new System.Drawing.Point(148, 39);
             this.forwardB.Name = "forwardB";
             this.forwardB.Size = new System.Drawing.Size(80, 89);
             this.forwardB.TabIndex = 0;
@@ -55,7 +56,7 @@
             // backwardB
             // 
             this.backwardB.Image = ((System.Drawing.Image)(resources.GetObject("backwardB.Image")));
-            this.backwardB.Location = new System.Drawing.Point(196, 290);
+            this.backwardB.Location = new System.Drawing.Point(148, 232);
             this.backwardB.Name = "backwardB";
             this.backwardB.Size = new System.Drawing.Size(80, 88);
             this.backwardB.TabIndex = 1;
@@ -64,7 +65,7 @@
             // leftB
             // 
             this.leftB.Image = ((System.Drawing.Image)(resources.GetObject("leftB.Image")));
-            this.leftB.Location = new System.Drawing.Point(98, 193);
+            this.leftB.Location = new System.Drawing.Point(50, 135);
             this.leftB.Name = "leftB";
             this.leftB.Size = new System.Drawing.Size(80, 90);
             this.leftB.TabIndex = 2;
@@ -73,7 +74,7 @@
             // rightB
             // 
             this.rightB.Image = ((System.Drawing.Image)(resources.GetObject("rightB.Image")));
-            this.rightB.Location = new System.Drawing.Point(296, 193);
+            this.rightB.Location = new System.Drawing.Point(248, 135);
             this.rightB.Name = "rightB";
             this.rightB.Size = new System.Drawing.Size(80, 90);
             this.rightB.TabIndex = 3;
@@ -82,27 +83,41 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.label1.Location = new System.Drawing.Point(40, 38);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.label1.Location = new System.Drawing.Point(23, 20);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(91, 24);
+            this.label1.Size = new System.Drawing.Size(119, 17);
             this.label1.TabIndex = 4;
-            this.label1.Text = "Controller";
+            this.label1.Text = "Sphero Controller";
             // 
             // colorB
             // 
             this.colorB.Image = ((System.Drawing.Image)(resources.GetObject("colorB.Image")));
-            this.colorB.Location = new System.Drawing.Point(196, 196);
+            this.colorB.Location = new System.Drawing.Point(148, 138);
             this.colorB.Name = "colorB";
             this.colorB.Size = new System.Drawing.Size(80, 79);
             this.colorB.TabIndex = 5;
             this.colorB.TabStop = false;
             // 
+            // breakB
+            // 
+            this.breakB.BackColor = System.Drawing.Color.White;
+            this.breakB.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.breakB.Location = new System.Drawing.Point(128, 326);
+            this.breakB.Name = "breakB";
+            this.breakB.ReadOnly = true;
+            this.breakB.Size = new System.Drawing.Size(117, 20);
+            this.breakB.TabIndex = 6;
+            this.breakB.Text = "Break";
+            this.breakB.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(484, 461);
+            this.BackColor = System.Drawing.SystemColors.Control;
+            this.ClientSize = new System.Drawing.Size(384, 361);
+            this.Controls.Add(this.breakB);
             this.Controls.Add(this.colorB);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.rightB);
@@ -130,5 +145,6 @@
         private System.Windows.Forms.PictureBox rightB;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox colorB;
+        private System.Windows.Forms.TextBox breakB;
     }
 }

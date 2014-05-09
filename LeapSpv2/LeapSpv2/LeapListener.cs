@@ -115,14 +115,22 @@ namespace LeapSpv2
                                 f.sp.SetRGBLEDOutput(255, 0, 0);
                                 f2.whenSPred();
                             }
+                            /*else if (gesture.Type == Gesture.GestureType.TYPESCREENTAP)
+                            {
+                                f.sp.Sleep();
+                            }*/
                         }
                     }
                     previousTime = currentTime;
                 }
                 else if (Rhand.Fingers.Count < 1)
                 {
-                    if (timeChange > FramePause)
+                    f.sp.Roll(0, 0, 1);
+                    f2.whenSPbreak();
+                    /*if (timeChange > FramePause)
                     {
+                        f.sp.Roll(0, 0, 1);
+                        f2.whenSPbreak();
                         /*GestureList gestures = frame.Gestures();
                         for (i = 0; i < gestures.Count; i++)
                         {
@@ -131,9 +139,9 @@ namespace LeapSpv2
                             {
                                 //Stop
                             }
-                        }*/
+                        }
                     }
-                    previousTime = currentTime;
+                    previousTime = currentTime;*/
                 }
             }
         }
