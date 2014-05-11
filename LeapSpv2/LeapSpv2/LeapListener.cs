@@ -41,7 +41,7 @@ namespace LeapSpv2
             this.currentTime = frame.Timestamp;
             this.timeChange = currentTime - previousTime;
             int i;
-            if (frame.Hands.Count == 1)
+            if (frame.Hands.Count == 1 && f.sp != null)
             {
                 Hand Rhand = frame.Hands.Rightmost;
                 if (Rhand.Fingers.Count > 1)

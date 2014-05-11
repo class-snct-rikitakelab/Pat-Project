@@ -34,18 +34,30 @@ namespace LeapSpv2
 
         public void whenLConnect()
         {
-            lconn.BackColor = Color.LawnGreen;
-            ldisconn.BackColor = Color.White;
-            lconn.Update();
-            ldisconn.Update();
+            try
+            {
+                lconn.BackColor = Color.LawnGreen;
+                ldisconn.BackColor = Color.White;
+                lconn.Update();
+                ldisconn.Update();
+            }
+            catch (Exception e)
+            {
+            }
         }
 
         public void whenLDisconnect()
         {
-            ldisconn.BackColor = Color.Red;
-            lconn.BackColor = Color.White;
-            lconn.Update();
-            ldisconn.Update();
+            try
+            {
+                ldisconn.BackColor = Color.Red;
+                lconn.BackColor = Color.White;
+                lconn.Update();
+                ldisconn.Update();
+            }
+            catch (Exception e)
+            {
+            }
         }
 
         private void btnConnect_Click(object sender, EventArgs e)

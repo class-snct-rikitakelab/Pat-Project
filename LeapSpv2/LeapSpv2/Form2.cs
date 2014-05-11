@@ -53,6 +53,10 @@ namespace LeapSpv2
         public void whenSPbreak()
         {
             breakB.BackColor = Color.Red;
+            rightB.Image = LeapSpv2.Properties.Resources.rightBtn;
+            leftB.Image = LeapSpv2.Properties.Resources.leftBtn;
+            forwardB.Image = LeapSpv2.Properties.Resources.forwardBtn;
+            backwardB.Image = LeapSpv2.Properties.Resources.backwardBtn;
         }
 
         public void whenSPred()
