@@ -126,6 +126,8 @@
     <Content Include="msvcp100d.dll" />
     <Content Include="msvcr100.dll" />
     <Content Include="msvcr100d.dll" />
+    <None Include="Resources\pBtn.png" />
+    <None Include="Resources\pauseBtn.png" />
     <None Include="Resources\redBtn.png" />
     <None Include="Resources\blueBtn.png" />
     <None Include="Resources\backwardBtn.jpg" />

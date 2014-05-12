@@ -20,7 +20,8 @@ namespace LeapSpv2
             leftB.Image = LeapSpv2.Properties.Resources.leftBtn;
             forwardB.Image = LeapSpv2.Properties.Resources.forwardBtn;
             backwardB.Image = LeapSpv2.Properties.Resources.backwardBtn;
-            breakB.BackColor = Color.White;
+            colorB.Image = LeapSpv2.Properties.Resources.pauseBtn;
+            //breakB.BackColor = Color.White;
         }
 
         public void whenSPleft()
@@ -29,7 +30,8 @@ namespace LeapSpv2
             rightB.Image = LeapSpv2.Properties.Resources.rightBtn;
             forwardB.Image = LeapSpv2.Properties.Resources.forwardBtn;
             backwardB.Image = LeapSpv2.Properties.Resources.backwardBtn;
-            breakB.BackColor = Color.White;
+            colorB.Image = LeapSpv2.Properties.Resources.pauseBtn;
+            //breakB.BackColor = Color.White;
         }
 
         public void whenSPforward()
@@ -38,7 +40,8 @@ namespace LeapSpv2
             rightB.Image = LeapSpv2.Properties.Resources.rightBtn;
             leftB.Image = LeapSpv2.Properties.Resources.leftBtn;
             backwardB.Image = LeapSpv2.Properties.Resources.backwardBtn;
-            breakB.BackColor = Color.White;
+            colorB.Image = LeapSpv2.Properties.Resources.pauseBtn;
+            //breakB.BackColor = Color.White;
         }
 
         public void whenSPbackward()
@@ -47,27 +50,28 @@ namespace LeapSpv2
             rightB.Image = LeapSpv2.Properties.Resources.rightBtn;
             leftB.Image = LeapSpv2.Properties.Resources.leftBtn;
             forwardB.Image = LeapSpv2.Properties.Resources.forwardBtn;
-            breakB.BackColor = Color.White;
+            colorB.Image = LeapSpv2.Properties.Resources.pauseBtn;
+            //breakB.BackColor = Color.White;
         }
 
         public void whenSPbreak()
         {
-            breakB.BackColor = Color.Red;
+            colorB.Image = LeapSpv2.Properties.Resources.pBtn;
             rightB.Image = LeapSpv2.Properties.Resources.rightBtn;
             leftB.Image = LeapSpv2.Properties.Resources.leftBtn;
             forwardB.Image = LeapSpv2.Properties.Resources.forwardBtn;
             backwardB.Image = LeapSpv2.Properties.Resources.backwardBtn;
         }
 
-        public void whenSPred()
+        /*public void whenSPred()
         {
             colorB.Image = LeapSpv2.Properties.Resources.redBtn;
-        }
+        }*/
 
         public Form2()
         {
             InitializeComponent();
-            breakB.BackColor = Color.White;
+            //breakB.BackColor = Color.White;
         }
     }
 }

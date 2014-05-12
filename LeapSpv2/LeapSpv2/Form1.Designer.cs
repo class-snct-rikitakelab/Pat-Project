@@ -31,11 +31,11 @@
             this.label1 = new System.Windows.Forms.Label();
             this.BTconnection = new System.Windows.Forms.ListBox();
             this.btnSearch = new System.Windows.Forms.Button();
-            this.ldisconn = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.btnConnect = new System.Windows.Forms.Button();
-            this.lconn = new System.Windows.Forms.TextBox();
+            this.lconn = new System.Windows.Forms.Label();
+            this.ldisconn = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -69,17 +69,6 @@
             this.btnSearch.UseVisualStyleBackColor = true;
             this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
             // 
-            // ldisconn
-            // 
-            this.ldisconn.BackColor = System.Drawing.Color.White;
-            this.ldisconn.Location = new System.Drawing.Point(152, 64);
-            this.ldisconn.Name = "ldisconn";
-            this.ldisconn.ReadOnly = true;
-            this.ldisconn.Size = new System.Drawing.Size(100, 20);
-            this.ldisconn.TabIndex = 3;
-            this.ldisconn.Text = "Disconnected";
-            this.ldisconn.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
             // label2
             // 
             this.label2.AutoSize = true;
@@ -111,29 +100,40 @@
             // lconn
             // 
             this.lconn.BackColor = System.Drawing.Color.White;
+            this.lconn.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lconn.Location = new System.Drawing.Point(31, 64);
             this.lconn.Name = "lconn";
-            this.lconn.ReadOnly = true;
             this.lconn.Size = new System.Drawing.Size(100, 20);
-            this.lconn.TabIndex = 6;
+            this.lconn.TabIndex = 8;
             this.lconn.Text = "Connected";
-            this.lconn.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.lconn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // ldisconn
+            // 
+            this.ldisconn.BackColor = System.Drawing.Color.White;
+            this.ldisconn.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.ldisconn.Location = new System.Drawing.Point(152, 64);
+            this.ldisconn.Name = "ldisconn";
+            this.ldisconn.Size = new System.Drawing.Size(100, 20);
+            this.ldisconn.TabIndex = 9;
+            this.ldisconn.Text = "Disconnected";
+            this.ldisconn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(284, 261);
-            this.Controls.Add(this.btnConnect);
+            this.Controls.Add(this.ldisconn);
             this.Controls.Add(this.lconn);
+            this.Controls.Add(this.btnConnect);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.ldisconn);
             this.Controls.Add(this.btnSearch);
             this.Controls.Add(this.BTconnection);
             this.Controls.Add(this.label1);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Device Status";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -145,11 +145,11 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ListBox BTconnection;
         private System.Windows.Forms.Button btnSearch;
-        private System.Windows.Forms.TextBox ldisconn;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button btnConnect;
-        private System.Windows.Forms.TextBox lconn;
+        private System.Windows.Forms.Label lconn;
+        private System.Windows.Forms.Label ldisconn;
 
     }
 }
