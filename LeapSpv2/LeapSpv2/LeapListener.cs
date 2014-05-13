@@ -17,9 +17,11 @@ namespace LeapSpv2
         private Form2 f2;
         private double baseX;
         private double baseZ;
+        private int angle = 0;
         private int baseReset = 20;
         private int baseReset2 = 0;
         private int mode = 0;
+        private bool calibate = false;
         public void SetF(Form1 ff)
         {
             f = ff;
@@ -51,10 +53,26 @@ namespace LeapSpv2
         public override void OnFrame(Controller ctrl)
         {
             Frame frame = ctrl.Frame();
-            if (frame.Hands.Count > 0 && f.sp != null)
+            Hand hand = frame.Hands[0];
+            int n = frame.Pointables.Count;
+            if (!calibate && f.sp != null)
             {
-                Hand hand = frame.Hands[0];
-                int n = frame.Pointables.Count;
+                f.sp.SetRGBLEDOutput(255, 255, 255);
+                f.sp.SetBackLEDOutput(255);
+                if (frame.Hands.Count > 0 && n <= 2) {
+                    angle = (angle + 2) % 360;
+                    f.sp.Roll(0,angle, 1);
+                    //f2.setCalibateAngleText("Degree : " + (int)angle);
+
+                }
+                else if (frame.Hands.Count > 0 && n >= 5)
+                {
+                    f.sp.SetBackLEDOutput(0);
+                    calibate = true;
+                }
+            }
+            if (frame.Hands.Count > 0 && f.sp != null && calibate)
+            {
                 if (mode == 0 && n > 3)
                 {
                     baseReset2 = 0;
@@ -64,6 +82,7 @@ namespace LeapSpv2
                     if (baseReset2++ > 20)
                         mode = 1;
                     f.sp.SetRGBLEDOutput(255, 0, 0);
+                    f2.whenSPbreak();
                 }
                 else if (mode == 1 && n >= 5)
                 {
@@ -85,12 +104,13 @@ namespace LeapSpv2
                 }
                 if (mode == 2)
                 {
-                    double x = filter(baseX - hand.PalmPosition.x);
-                    double z = -filter(baseX - hand.PalmPosition.z);
+                    double x = filter(hand.PalmPosition.x - baseX);
+                    double z = -filter(hand.PalmPosition.z - baseZ);
                     double speed = Math.Sqrt(Math.Pow(x, 2) + Math.Pow(z, 2));
                     double deg = Math.Atan2(x, z) / Math.PI * 180;
-                    deg = (deg + 360) % 360;
-                    deg = deg + 90;
+                    deg = (deg + angle + 360) % 360;
+                    deg = deg - 90;
+                    //f2.setMoveAngleText("Degree : " + deg.ToString());
                     f.sp.Roll((int)speed, (int)deg, 1);
                     //change color
                     int rNum, gNum, bNum;
@@ -99,6 +119,27 @@ namespace LeapSpv2
                     gNum = r.Next(0, 255);
                     bNum = r.Next(0, 255);
                     f.sp.SetRGBLEDOutput((byte)rNum, (byte)gNum, (byte)bNum);
+                    if (deg > 315 || deg < 45)
+                    {
+                        // forward
+                        f2.whenSPforward();
+                    }
+                    if (deg >= 45 || deg < 135)
+                    {
+                        // right
+                        f2.whenSPright();
+                    }
+                    if (deg >= 135 || deg < 225)
+                    {
+                        // backward
+                        f2.whenSPbackward();
+                    }
+                    if (deg >= 225 || deg < 315)
+                    {
+                        // left
+                        f2.whenSPleft();
+                    }
+
                 }
             }
             else

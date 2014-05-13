@@ -69,6 +69,11 @@ namespace SpheroNET
             SendPacket(SpheroCommandPacketFactory.Roll(speed, heading, value));
         }
 
+        public void SetBackLEDOutput(int bright)
+        {
+            SendPacket(SpheroCommandPacketFactory.SetBackLEDOutput(bright));
+        }
+
         public void AppendOrbBasicFragment(StorageArea area, string fragment)
         {
             SendPacket(SpheroCommandPacketFactory.AppendOrbBasicFragment(area, fragment));

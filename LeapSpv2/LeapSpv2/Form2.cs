@@ -63,6 +63,15 @@ namespace LeapSpv2
             backwardB.Image = LeapSpv2.Properties.Resources.backwardBtn;
         }
 
+        //public void setMoveAngleText(string text)
+        //{
+        //    moveAngle.Text = text;
+        //}
+
+        //public void setCalibateAngleText(string text)
+        //{
+        //    calibateAngle.Text = text;
+        //}
         /*public void whenSPred()
         {
             colorB.Image = LeapSpv2.Properties.Resources.redBtn;

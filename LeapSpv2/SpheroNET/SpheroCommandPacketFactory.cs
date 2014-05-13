@@ -40,6 +40,11 @@ namespace SpheroNET
             return new SpheroCommandPacket(0x02, 0x30, 0x01, new byte[] { (byte)speed, (byte)((heading & 0xFF00) >> 8), (byte)(heading & 0x00FF), (byte)value });
         }
 
+        public static SpheroCommandPacket SetBackLEDOutput(int bright)
+        {
+            return new SpheroCommandPacket(0x02, 0x21, 0x01, new byte[] { (byte)0x02, (byte)bright });
+        }
+
         public static SpheroCommandPacket SetRGBLEDOutput(byte r, byte g, byte b)
         {
             bool flag = false;
